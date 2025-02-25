@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Congés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 70px;
+            margin-right: 10px;
+        }
+        .menu {
+            display: flex;
+            background: black;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+          
+        }
+        .menu a:hover {
+            background: gray;
+            border-radius: 5px;
+
+        }
+        .container {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+
+        .info {
+            display: flex;
+            align-items: center;
+        }
+        .info img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .leave-box {
+            text-align: right;
+            background: #eaf6ff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .leave-box button {
+            background: blue;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .leave-box button:hover {
+            background: darkblue;
+            transform: scale(1.1);
+        }
+        .user-info {
+            text-align: right;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../image/images.png" alt="Logo">
+        <h2>Gestion des congés</h2>
+    </div>
+    <div class="menu">
+        <a href="#">États divers</a>
+        <a href="#">Administration</a>
+        <a href="#">Demandes en attente</a>
+    </div>
+    <div class="user-info">
+        <span>Compte courant</span> | <span style="color: red;"></span>
+    </div>
+    <div class="container">
+        <div class="info">
+            <strong>Informations générales relatives à l'employé</strong>
+        </div>
+        <table class="table">
+            <tr>
+                <td>Date d'entrée :</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Affectation :</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fonction :</td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="leave-box">
+            <p><strong>Reste à prendre : 0,0 jours</strong></p>
+            <p>Nombre total de jours de congé restants</p>
+            <button>Demander un congé</button>
+        </div>
+    </div>
+</body>
+</html>
